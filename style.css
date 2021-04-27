@@ -7,7 +7,7 @@ div {
 }
 
 .heading h1 {
-  margin-top: 10px;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -24,14 +24,10 @@ div {
 
   margin-bottom: 1rem;
 }
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
+
 .logo {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
 }
 .topnav a {
   float: left;
@@ -62,7 +58,7 @@ div {
   display: block;
   border: 1px solid #702632;
   border-radius: 5px;
-  width: 30vw;
+  width: 40%;
 }
 
 .entry-name {
@@ -74,14 +70,26 @@ div {
 .platform label {
   margin-right: 2rem;
 }
-.entry-gamertag label,
-.game label {
+.entry-gamertag input,
+.game input {
   margin-right: 1rem;
 }
-
+.entry-name input,
+.entry-gamertag input {
+  width: auto;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  font-size: large;
+  background-color: #c2bdbd;
+  border: none;
+}
 .platform-selection,
 .game-selection {
-  border-radius: 0.5rem;
+  width: 50%;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #f1f1f1;
 }
 .entry-gamertag {
   display: flex;
@@ -91,9 +99,8 @@ div {
 
 /* Button */
 button {
-  font-family: Noto Sans, sans-serif;
-  margin: 10px 2px 10px 10px;
-  padding: 15px 20px;
+  margin: 1rem 2rem;
+  padding: 1.5rem 2rem;
   text-align: center;
   font-size: 16px;
   color: #912f40;
@@ -103,22 +110,34 @@ button {
   border-radius: 15px;
   transition-duration: 0.4s;
 }
-.submit-button {
-  display: block;
-  top: 3rem;
-  right: 0;
-  position: relative;
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-
+#submit-button {
+  padding: 1rem 2rem;
+}
 button:hover {
   transition: 0.3s;
   background-color: #702632;
   color: white;
 }
+/*  Results  */
 
-.results {
-  display: block;
-  margin: auto;
+.results-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #702632;
+  border-radius: 0.5rem;
+}
+
+.results p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
 }
 .platform-links {
   display: flex;
