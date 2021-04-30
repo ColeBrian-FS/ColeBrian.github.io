@@ -13,3 +13,12 @@ function onSubmit(){
     document.getElementById("system-output").innerHTML = "System: " + results1;
     document.getElementById("game-output").innerHTML = "Game: " + results2;
  }
+
+ function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
